@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: gerat;
-  src: url(/fonts/ttf/Garet-Book.ttf);
+  src: url(fonts/ttf/Garet-Book.ttf);
   font-weight: bold;
 }
 
@@ -21,7 +21,7 @@ body {
 /* Font for barbershops */
 @font-face {
   font-family: paris;
-  src: url(/fonts/paris_font.ttf);
+  src: url(fonts/paris_font.ttf);
 }
 
 #mainimage {
