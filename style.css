@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: gerat;
+  src: url(/fonts/ttf/Garet-Book.ttf);
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "paris";
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "gerat";
+}
+
+/* Font for barbershops */
+@font-face {
+  font-family: paris;
+  src: url(/fonts/paris_font.ttf);
+}
+
+#mainimage {
+  height: 100%;
+  width: 100%;
+  background-image: url("img/engagement_backside.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  padding: 40px;
+  height: 600px;
+  text-align: center;
+  line-height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+#header-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  position: absolute;
+  left: 0%;
+  vertical-align: middle;
+  height: 100%;
+  width: height;
+}
+
+.mainTitle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: paris;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  margin: 0;
+  position: absolute;
+  line-height: 5rem;
+}
+
+.subTitle{
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: paris;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  margin: 0;
+  position: absolute;
+  line-height: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+#navigation {
+  background-color: #ffffff;
+  top: 0px;
+  position: fixed;
+  overflow: hidden;
+  text-align: center;
+  font-family: "gerat";
+  width: 100%;
+  z-index: 99999;
+}
+
+/* Style the links inside the navigation bar */
+#navigation a {
+  display: inline-block;
+  color: #000000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navigation li {
+  display: inline;
+}
+
+/* Change the color of links on hover */
+#navigation a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+#navigation a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* --- Mobile nav --- */
+#mobile-nav {
+  background-color: #ffffff;
+  font-family: Garamond, "Times New Roman", Times, serif;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 998;
+}
+
+#menu-btn {
+  all: unset;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  background: #ffffff;
+  margin-left: auto;
+}
+
+#menu-btn > svg {
+  width: 32px;
+  height: 32px;
+  fill: #000000;
+}
+
+#nav-panel {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: #ffffff;
+  width: 100%;
+}
+
+.menu-open #nav-panel {
+  display: block;
+}
+
+#menu-btn .hamburger-icon {
+  display: inline-block;
+}
+
+.menu-open #menu-btn .hamburger-icon {
+  display: none;
+}
+
+#menu-btn .close-icon {
+  display: none;
+}
+
+.menu-open #menu-btn .close-icon {
+  display: inline-block;
+}
+
+#nav-panel li a {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  transition: background-color 0.2s ease;
+  color: #000000;
+  text-decoration: none;
+  font-family: "gerat";
+}
+
+#nav-panel li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* show mobile-nav only on small screens, show navigation only on big screens */
+@media screen and (max-width: 800px) {
+  #navigation {
+    display: none;
+  }
+  #mobile-nav {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #navigation {
+    display: block;
+  }
+  #mobile-nav {
+    display: none;
+  }
+}
+
+/* Remove bulletpoints from navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Tables in Gallery and Tools */
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}

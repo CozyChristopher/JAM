@@ -1,0 +1,35 @@
+/* -----------Tutorials----------- */
+
+.tutorial-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  padding: 1rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.tutorial-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: #f4f4f4;
+  border: 1px solid #e0e0e0;
+}
+
+.tutorial-item img {
+  height: 10rem;
+  aspect-ratio: 16/9;
+  border-radius: 1rem;
+  isolation: isolate;
+  overflow: hidden;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+.tutorial-item a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
