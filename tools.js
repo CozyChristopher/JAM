@@ -11,19 +11,20 @@
 
 const slidesData = [
   {
-    src: "https://i.pinimg.com/originals/e5/32/9f/e5329f68b4e412dfd6868848d7906a2e.jpg",
-    alt: "Best Clippers of 2023!",
-    link: "https://www.youtube.com/watch?v=gAxqceAl2Fo"
+    src: "img/engagement_backside.JPG",
+    alt: "Engagement Backside",
   },
   {
-    src: "https://media.gq-magazine.co.uk/photos/60227c068e3f516f2e2e62d5/16:9/pass/Hair-scissors-lead.jpg",
-    alt: "Find your Shears!",
-    link: "https://www.youtube.com/watch?v=mdcuArOi-0g"
+    src: "img/IMG-0600.JPG",
+    alt: "Rose",
   },
   {
-    src: "https://i.ytimg.com/vi/v0TKMU6t6Ng/maxresdefault.jpg",
-    alt: "Best Trimmers of 2023!",
-    link: "https://www.youtube.com/watch?v=nSe5Hxj5IJk"
+    src: "img/IMG-0250.JPG",
+    alt: "Kissing",
+  }
+  {
+    src: "img/IMG-1040.JPG",
+    alt: "Dancing",
   }
 ];
 
