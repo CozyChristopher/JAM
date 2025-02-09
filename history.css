@@ -8,23 +8,23 @@
 */
 
 ul.timeline {
-  padding: 50px 0;
+  padding: 1rem 0;
 }
 
 ul.timeline li {
   position: relative;
   list-style-type: none;
-  width: 6px;
-  background-color: rgb(8, 8, 8);
+  width: 0.25rem;
+  background-color: rgba(102, 192, 252, 0.5);
   margin: 0 auto;
   padding-top: 50px;
 }
 
 ul.timeline li::after {
-  background: black;
+  background: rgb(102, 192, 252);
   content: "";
-  width: 25px;
-  height: 25px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -38,7 +38,7 @@ ul.timeline li div {
   padding: 15px;
   border-radius: 5px;
   bottom: 0;
-  background: rgba(42, 50, 113, 0.28);
+  /* background: rgba(42, 50, 113, 0.28); */
 }
 
 ul.timeline li:nth-child(odd) div {
